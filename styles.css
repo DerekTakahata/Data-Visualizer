@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600;9..40,700&display=swap');
+
+body {
+  --quiverTan: #8F7F6A;
+  --whiteDove: #F0EDE4;
+  --wroughtIron: #494a4b;
+  --doveWing: #E9E5DA;
+}
+* {
+  margin:0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--whiteDove);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-bottom: 2px solid var(--wroughtIron);
+  background-color: var(--quiverTan);
+}
+
+button, select {
+  background-color: var(--doveWing);
+  padding: 0px 4px;
+  border: 2px solid var(--wroughtIron);
+  border-radius: 360px;
+  padding: 4px 6px;
+  font-family:'DM Sans', sans-serif;
+  transition: background-color .15s, color .15s;
+}
+
+button:hover, select:hover {
+  cursor: pointer;
+  background-color: var(--wroughtIron);
+  color: var(--whiteDove);
+}
+
+.slider {
+  display: flex;
+}
+
+.slider .number {
+  padding-right: 8px;
+  font-family:'DM Sans', sans-serif;
+}
+
+.container {
+  /* I can change and move this box later if I want to make it look better */
+  display: flex;
+  height: 70%;
+  width: 80%;
+  position: absolute;
+  background-color: white;
+  padding: 0 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
