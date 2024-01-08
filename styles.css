@@ -62,3 +62,10 @@ button:hover, select:hover {
   transform: translate(-50%, -50%)
 }
 
+.github a img {
+  position: absolute;
+  width: 20px;
+  bottom: 1%;
+  right: 1%;
+}
+
